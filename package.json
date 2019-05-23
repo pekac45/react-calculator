@@ -17,6 +17,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "prettier": "@azz/prettier-config",
   "browserslist": {
     "production": [
       ">0.2%",

@@ -1,5 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CalculatorStyles = styled.div`
-	background-color: #2e4272;
+  background-color: #2e4272;
 `;
