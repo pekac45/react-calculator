@@ -6,7 +6,7 @@ import EqualButton from './EqualButton';
 import FunctionButton from './FunctionButton';
 import NegativeButton from './NegativeButton';
 import NumberButton from './NumberButton';
-import { CalculatorStyles } from '../styles/Styles';
+import { CalculatorStyles } from './styles/Styles';
 
 const Calculator = () => (
   <CalculatorStyles>
@@ -14,7 +14,7 @@ const Calculator = () => (
       <h1>React Hooks Calculator</h1>
       <Display />
     </div>
-    <div className="numberPad">
+    <div className="number-pad">
       <ClearButton />
       <BackButton />
       <NegativeButton />
