@@ -10,6 +10,13 @@ import { CalculatorStyles } from './styles/Styles';
 
 const Calculator = () => (
   <CalculatorStyles>
+    <div className="back">
+      <a href="https://pekar.space">
+        <button style={{ padding: '0 30px' }}>
+          &larr; Back to pekar.space
+        </button>
+      </a>
+    </div>
     <div className="display">
       <h1>React Hooks Calculator</h1>
       <Display />
