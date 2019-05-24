@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { NumberContext } from './NumberProvider';
 
-const BackButton = ({ buttonValue }) => {
-  return <button type="button">{buttonValue}</button>;
+const NumberButton = () => {
+  const { handleBackButton } = useContext(NumberContext);
+  return (
+    <button type="button" onClick={() => handleBackButton()}>
+      {`<-`}
+    </button>
+  );
 };
 
-export default BackButton;
+export default NumberButton;

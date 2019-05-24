@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { NumberContext } from './NumberProvider';
 
-const FunctionButton = ({ buttonValue }) => {
-	return <button type="button">{buttonValue}</button>;
+const NegativeButton = ({ buttonValue }) => {
+  const { handleSetCalcFunction } = useContext(NumberContext);
+  return (
+    <button type="button" onClick={() => handleSetCalcFunction(buttonValue)}>
+      {buttonValue}
+    </button>
+  );
 };
 
-export default FunctionButton;
+export default NegativeButton;
