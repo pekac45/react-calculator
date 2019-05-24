@@ -12,14 +12,17 @@ export const CalculatorStyles = styled.div`
   button {
     width: 100%;
     height: 80px;
-    border-radius: 20px;
     border: 3px solid white;
+    border-radius: 10px;
     font-size: 2rem;
     color: white;
     font-family: 'Dosis', sans-serif;
     background: #dec700;
     &:focus {
       outline: none;
+    }
+    &:hover {
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
     }
   }
   .display {
@@ -39,7 +42,8 @@ export const CalculatorStyles = styled.div`
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     padding: 0px 0px 30px;
-    width: 450px;
+    width: 400px;
+    height: 450px;
     .button-div:focus {
       outline: none;
     }
